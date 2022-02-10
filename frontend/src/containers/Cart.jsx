@@ -9,38 +9,40 @@ import { getItems } from "../reducks/items/selectors";
 import MainImage from "../components/Common/MainImage";
 
 const Cart = () => {
-    const selecetor = useSelector((start) => state);
-    const dispatch = useDispatch();
-    const carts = getCarts(selector);
-    const users = getUser(selector);
-    const items = getItems(selector);
+  const selector = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const carts = getCarts(selector);
+  const user = getUser(selector);
+  const items = getItems(selector);
 
-    useEffect(() => {
-        dispatch(fetchItems());
-        dispatch(fetchCarts());
-    }, []);
+  useEffect(() => {
+    dispatch(fetchItems());
+    dispatch(fetchCarts());
+  }, []);
 
-    return (
-        <>
-            <MainImage />
-            <section class="text">
-                <ul class="food-items">
-                    {
-                        (carts,
-                            items &&
-                            carts.map((cart) => (
-                                <li>
-                                    <CartItem
-                                        cart={cart.item}
-                                        cartId={cart.id}
-                                        key={cart.item.id}
-                                        quantity={cart.quantity}
-                                    />
-                                </li>
-                            )))
-                    }
-                </ul>
-            </section>
-        </>
-    );
+  return (
+    <>
+      <MainImage />
+      <section class="text">
+        <ul class="food-items">
+          {
+            (carts,
+            items &&
+              carts.map((cart) => (
+                <li>
+                  <CartItem
+                    cart={cart.item}
+                    cartId={cart.id}
+                    key={cart.item.id}
+                    quantity={cart.quantity}
+                  />
+                </li>
+              )))
+          }
+        </ul>
+      </section>
+    </>
+  );
 };
+
+export default Cart;

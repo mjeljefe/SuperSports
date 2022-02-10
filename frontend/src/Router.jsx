@@ -8,21 +8,21 @@ import SignUp from "./containers/SignUp";
 import OrderConfirmation from "./containers/order-confirmation";
 
 const Router = () => {
-    return (
-        <>
-            <Switch>
-                <Route exact path={"/"} component={Home} />
-                <Route exact path={"/signup"} component={SignUp} />
-                <Route exact path={"/signin"} component={Signin} />
-                <Route exact path={"/cart"} component={Carts} />
-                <Route exact path={"/shipping"} component={Shipping} />
-                <Route
-                    exact
-                    path={"/order-confirmation"}
-                    component={OrderConfirmation}
-                />            
-            </Switch>
-        </>
-    );
+  return (
+    <>
+      <Switch>
+        <Route exact path={"/"} component={Home} />
+        <Route exact path={"/signup"} component={SignUp} />
+        <Route exact path={"/signin"} component={Signin} />
+        <Route exact path={"/cart"} component={Cart} />
+        <Route exact path={"/shipping"} component={Shipping} />
+        <Route
+          exact
+          path={"/order-confirmation"}
+          component={OrderConfirmation}
+        />
+      </Switch>
+    </>
+  );
 };
 export default Router;

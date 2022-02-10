@@ -1,148 +1,1089 @@
-/*
-Common
-************************************/
-
 html,
 body {
-    height: 100%;
-    font-family: sans-serif;
+  width: 100%;
 }
 
-.content {
-    width: 600px;
-    height: 100%;
-    margin: 0 auto;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+body {
+  background-color: #313636;
+  margin: 0;
+}
+main .header01 {
+  top: 10 px;
+  width: 100%;
+  display: flex;
+  margin: 0%;
+}
+.bottom {
+  margin: 0%;
+}
+.bottom .foot {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom .foot p {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 3% 0% 0% 50%;
+}
+.bottom .foot button {
+  margin: 2% 2% 1% 2%;
+  height: 70px;
+  font-size: 30px;
+  border-radius: 6%;
+  background-color: #a4c703;
+  color: white;
 }
 
-@media screen and (max-width: 500px) {
+.bottom {
+  margin: 0%;
+  background-color: #c2e8c230;
+}
+.bottom .footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #495050;
+  position: fixed;
+  top: 90%;
+  width: 100%;
+  height: 85px;
 }
 
-/*
-Posts
-************************************/
-
-.post_form {
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
+.bottom .footer p {
+  font-size: 33px;
+  margin-left: 54%;
+  color: #fff;
+  font-family: Roboto;
+  margin-top: 13px;
+  font-weight: 500;
+}
+.bottom .footer a {
+  margin-right: 5%;
 }
 
-.post_form input {
-    width: 96%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+.bottom .footer button {
+  margin-right: 5%;
+  background-color: #ff7f00;
+  color: white;
+  font-size: 22px;
+  width: 100%;
+  height: 55px;
+  border-radius: 7px;
+  margin-top: 7px;
+  border: 1px;
+}
+span.logout {
+  color: #fff;
+  margin-top: 5px;
+}
+span.minus {
+  margin-right: 10px;
+}
+.info-bottom button {
+  border: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 96px;
+  width: 15%;
+  border-radius: 3px;
+  background-color: #ff7f00;
+  color: #fff;
 }
 
-.post_form textarea {
-    width: 96%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+/* nav section */
+nav {
+  background-color: #495050;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+nav img {
+  width: 19%;
 }
 
-.post_form .upload-area {
-    width: 96%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
+nav .signup {
+  margin-right: 4%;
+}
+/* @media only screen and (max-width: 517px) {
+  nav .signup {
+    margin-left: 60%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  nav .signup a {
+    margin-left: -8px;
+  }
+} */
+@media only screen and (max-width: 402px) {
+  nav img {
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  nav .signup {
+    margin-left: 53%;
+  }
 }
 
-.post_form button {
+@media only screen and (max-width: 360px) {
+  nav .signup {
+    margin-left: 46%;
+  }
+}
+nav .signup {
+  display: flex;
+  margin-left: 70%;
+  height: 31px;
+  margin-top: 14px;
+}
+
+nav .signup a {
+  color: white;
+  text-decoration: none;
+  margin-top: 4px;
+}
+nav .signup img {
+  width: 25px;
+  height: 40px;
+  padding: 10px;
+  margin-top: -19px;
+}
+img {
+  width: 100%;
+}
+
+/* background section */
+.background img {
+  width: 100%;
+}
+.background .orange {
+  position: absolute;
+  top: 25%;
+  width: 56%;
+}
+.background .orange .rect {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+.background .orange .txt {
+  position: absolute;
+  top: 9%;
+  left: 7%;
+}
+
+/********************************************
+Section Text *******************************/
+ul.food-items li img.food-image {
+  width: 30%;
+  padding: 7px 0;
+}
+li.row {
+  display: flex;
+}
+ul.food-items {
+  list-style: none;
+  margin-bottom: 5%;
+}
+
+ul.food-items li .info {
+  width: 70%;
+  position: relative;
+  padding: 5px 15px;
+}
+ul.food-items li .name {
+  font-size: 25px;
+  color: #fff;
+  font-family: Raleway;
+}
+ul.food-items li .info .info-bottom {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+ul.food-items li .info .info-bottom .price {
+  padding-top: 105px;
+  font-size: 28px;
+  color: #fff;
+}
+ul.food-items li .info .info-bottom .add {
+  border: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 96px;
+  background-color: #ff7f00;
+  width: 15%;
+  border-radius: 7px;
+  color: #fff;
+}
+@media only screen and (max-width: 1280px) {
+  .bottom .footer button {
+    margin-top: 7px;
+    height: 45px;
+  }
+  .bottom .footer p {
+    margin-left: 54%;
+    margin-top: 9px;
+  }
+  .bottom .footer {
+    top: 92%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .bottom .footer {
+    top: 95%;
+  }
+  .bottom .footer p {
+    margin-left: 49%;
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+  .bottom .footer {
+    top: 90%;
+  }
+  .bottom .footer p {
+    margin-left: 52%;
+    margin-top: 11px;
+    font-size: 29px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bottom .footer p {
+    font-size: 29px;
+    margin-left: 35%;
+  }
+  .bottom .footer button {
+    margin-right: 4%;
+    font-size: 25px;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
+    margin-top: 7px;
+    height: 38px;
+  }
+  nav .signup a {
+    margin-left: -8px;
+  }
 }
 
-.upload-image {
-    width: 50%;
-}
-
-.posts ul {
-    padding: 0;
-}
-
-.posts li {
-    position: relative;
-    display: flex;
-    border-bottom: 1px solid #ccc;
-    padding: 20px 40px;
-    list-style: none;
-}
-
-.posts li .menu_icon {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 30px;
-    top: 18px;
-    cursor: pointer;
-}
-
-.posts li .menu {
-    position: absolute;
-    top: 40px;
-    right: 15px;
-    border: 1px solid #ccc;
-    background-color: white;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.posts li img {
+@media only screen and (max-width: 540px) {
+  ul.food-items li .info .info-bottom .add {
+    width: 22%;
+  }
+  .bottom .footer {
+    top: 91%;
+  }
+  .bottom .footer p {
+    font-size: 26px;
+    margin-left: 27%;
+    margin-top: 19px;
+  }
+  .bottom .footer button {
+    font-size: 20px;
     width: 100%;
+    margin-top: 15px;
+  }
+  nav .signup {
+    margin-left: 61%;
+  }
+  nav .signup a {
+    margin-left: -33px;
+  }
+  .info-bottom button {
+    width: 21%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  ul.food-items {
+    margin: 0;
+    padding: 6px;
+  }
+  li.row {
+    padding-bottom: 0;
+  }
+  ul.food-items li .info .info-bottom .price {
+    padding-top: 103 px;
+    font-size: 19px;
+  }
+  ul.food-items li .name {
+    font-size: 19px;
+  }
+  ul.food-items li .info .info-bottom .add {
+    font-size: 19px;
+    width: 34%;
+  }
+  .bottom .footer button {
+    height: 34px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .bottom .footer p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 12px;
+  }
+  .bottom .footer {
+    top: 93%;
+  }
+  .info-bottom button {
+    width: 32%;
+  }
+  nav .signup {
+    margin-left: 35%;
+  }
+  div.top {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bottom .footer button {
+    font-size: 15px;
+    width: 100%;
+    height: 26px;
+  }
+  .bottom .footer p {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 12px;
+  }
+  ul.food-items li .info .info-bottom .add {
+    width: 37%;
+    margin-top: 87px;
+  }
+  .bottom .footer {
+    top: 93%;
+  }
+  ul.food-items li .info .info-bottom {
+    width: 94%;
+  }
+}
+@media only screen and (max-width: 280px) {
+  nav .signup {
+    margin-left: 41%;
+  }
+  .info-bottom button {
+    width: 37%;
+  }
 }
 
-.posts li .menu a {
-    text-decoration: none;
+/********************** Cart.html Page *************************/
+
+.bottom01 {
+  margin: 0%;
+}
+.bottom01 .foot {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom01 .foot p {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 3% 0% 0% 50%;
+}
+.bottom01 .foot button {
+  margin: 2% 2% 1% 2%;
+  height: 70px;
+  font-size: 30px;
+  border-radius: 6%;
+  background-color: #a4c703;
+  color: white;
 }
 
-.posts li .logo {
-    flex-basis: 15%;
+.bottom01 {
+  margin: 0%;
+  border-top: 1px solid #c2e8c230;
+  background-color: #c2e8c230;
+}
+.bottom01 .footer01 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #495050;
+  position: fixed;
+  top: 93%;
+  width: 100%;
+  height: 85px;
 }
 
-.posts li .logo img {
-    width: 60%;
+.bottom01 .footer01 p {
+  font-size: 33px;
+  margin-left: 50%;
+  color: #fff;
+  font-family: Roboto;
+  margin-top: 13px;
+  font-weight: 500;
+}
+button.b1 {
+  margin-right: 2%;
+  background-color: #f79604;
+  color: white;
+  font-size: 22px;
+  width: 15%;
+  height: 45px;
+  border-radius: 7px;
+  margin-top: 7px;
+  border: 1px;
 }
 
-.posts li .name_body {
-    flex-basis: 85%;
+.bottom01 .footer01 button {
+  margin-right: 5%;
+  background-color: #f79604;
+  color: white;
+  font-size: 22px;
+  width: 20%;
+  height: 55px;
+  border-radius: 7px;
+  margin-top: 7px;
+  border: 1px;
+}
+p1 {
+  font-size: 27px;
+  margin-left: 66%;
+  color: #fff;
+  font-family: Roboto;
+  margin-top: 13px;
+  font-weight: 500;
 }
 
-.posts li .name_body .name {
-    font-weight: bold;
-    margin-bottom: 10px;
+@media only screen and (max-width: 1280px) {
+  .bottom01 .footer02 {
+    top: 92%;
+  }
+  nav {
+    width: 100%;
+  }
 }
 
-.posts li .name_body .body {
-    margin: 10px 0px;
+@media only screen and (max-width: 1024px) {
+  .bottom01 .footer02 {
+    top: 95%;
+  }
+  p1 {
+    margin-left: 61%;
+  }
+  nav {
+    width: 100%;
+  }
+  .details form input {
+    width: 40%;
+  }
 }
 
-.posts li .name_body .datetime {
-    color: gray;
-    margin-bottom: 10px;
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+  .bottom01 .footer02 {
+    top: 91%;
+  }
+  p1 {
+    margin-left: 60%;
+    margin-top: 11px;
+  }
+  button.b1 {
+    height: 39px;
+  }
 }
 
-.no-post {
-    text-align: center;
+@media only screen and (max-width: 800px) {
+  .bottom01 .footer02 {
+    top: 93%;
+  }
+  p1 {
+    margin-left: 42%;
+  }
+  button.b1 {
+    margin-right: 2%;
+    width: 26%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  p1 {
+    margin-left: 32%;
+    margin-top: 7px;
+  }
+  button.b1 {
+    height: 35px;
+  }
 }
 
-.no-post p {
-    margin: 0px 0px;
+@media only screen and (max-width: 450px) {
+  p1 {
+    font-size: 20px;
+    margin-left: 17%;
+    margin-top: 9px;
+  }
+  button.b1 {
+    margin-right: 4%;
+    font-size: 18px;
+    width: 34%;
+    height: 34px;
+  }
+  .bottom01 .footer02 {
+    top: 93%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  p1 {
+    margin-left: 11%;
+    margin-top: 5px;
+  }
+  button.b1 {
+    height: 25px;
+  }
+}
+div.footer02 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #495050;
+  position: fixed;
+  top: 90%;
+  width: 100%;
+  height: 85px;
+}
+@media only screen and (max-width: 280px) {
+  p1 {
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: 8%;
+  }
+  button.b1 {
+    margin-top: 8px;
+    width: 40%;
+  }
+  nav {
+    width: 100%;
+  }
+  .details form input {
+    width: 83%;
+  }
 }
 
-.loading {
-    text-align: center;
+@media only screen and (max-width: 1280px) {
+  .bottom01 .footer01 button {
+    margin-top: 7px;
+    height: 45px;
+  }
+  .bottom01 .footer p {
+    margin-left: 54%;
+    margin-top: 9px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .bottom01 .footer01 {
+    top: 95%;
+  }
+  .bottom01 .footer p {
+    margin-left: 49%;
+  }
+}
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+  .bottom01 .footer01 {
+    top: 90%;
+  }
+  .bottom01 .footer p {
+    margin-left: 52%;
+    margin-top: 11px;
+    font-size: 29px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .bottom01 .footer p {
+    font-size: 29px;
+    margin-left: 35%;
+  }
+  .bottom01.footer button {
+    margin-right: 4%;
+    font-size: 25px;
+    width: 27%;
+    margin-top: 7px;
+    height: 38px;
+  }
 }
 
-/*
-//
-//
-//
+@media only screen and (max-width: 540px) {
+  .bottom01 .footer01 {
+    top: 91%;
+  }
+  .bottom01 .footer p {
+    font-size: 26px;
+    margin-left: 27%;
+    margin-top: 19px;
+  }
+  .bottom01 .footer button {
+    font-size: 20px;
+    width: 30%;
+    margin-top: 15px;
+  }
+}
 
-*/
+@media only screen and (max-width: 450px) {
+  .bottom01 .footer button {
+    height: 34px;
+    font-size: 18px;
+    width: 41%;
+    margin-top: 8px;
+  }
+  .bottom01 .footer p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 12px;
+  }
+  .bottom01 .footer01 {
+    top: 93%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bottom01 .footer button {
+    font-size: 15px;
+    width: 44%;
+    height: 26px;
+  }
+  .bottom01 .footer p {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 12px;
+  }
+  .bottom01 .footer {
+    top: 93%;
+  }
+}
+
+/********************************* 
+Signup Page
+ ****************************/
+
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.popup .popup-inner {
+  background-color: #495050;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  left: 35vw;
+  top: 15%;
+  width: 24%;
+  border-radius: 5px;
+}
+.popup .popup-inner h1.heading {
+  font-family: Major Mono Display;
+  font-size: 13px;
+  color: #f79604;
+}
+
+@media only screen and (max-width: 1024px) {
+  .popup .popup-inner {
+    left: 27vw;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .popup .popup-inner {
+    left: 25vw;
+    width: 44%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .popup .popup-inner {
+    left: 15vw;
+    width: 70%;
+  }
+}
+
+.popup .popup-inner h2 {
+  position: relative;
+  color: #fff;
+  top: 5%;
+  font-family: Roboto;
+  font-size: 16px;
+  margin-top: -8px;
+  font-weight: normal;
+}
+.popup .popup-inner img.cross {
+  width: 4%;
+  float: right;
+  padding-right: 13px;
+  margin-top: 5px;
+}
+.popup .popup-input {
+  display: block;
+  top: 8%;
+  position: relative;
+}
+.popup .popup-input p {
+  color: #fff;
+}
+
+.popup .popup-input a {
+  color: #fff;
+}
+.popup input {
+  width: 70%;
+  height: 4vh;
+  border: 1px solid;
+  border-radius: 2px;
+}
+.popup .popup-input button {
+  width: 73%;
+  background-color: #ff7f00;
+  color: white;
+  font-size: 13px;
+  border: 0;
+  border-radius: 2px;
+  height: 30px;
+}
+h1.heading {
+  color: #f79604;
+  font-size: 15px;
+  font-family: Major Mono Display;
+}
+
+/****************************************
+Sign in Page
+****************************************/
+.popup01 {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.popup01 .popup-inner01 {
+  background-color: #495050;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  left: 35vw;
+  top: 15%;
+  width: 24%;
+  border-radius: 5px;
+}
+.popup01 .popup-inner01 h2 {
+  position: relative;
+  color: #fff;
+  top: 5%;
+  font-family: Roboto;
+  font-size: 17px;
+  margin-top: -13px;
+  font-weight: normal;
+}
+.popup01 .popup-inner01 img.cross01 {
+  width: 4%;
+  float: right;
+  padding-right: 13px;
+  margin-top: 5px;
+}
+.popup01 .popup-input01 {
+  display: block;
+  top: 8%;
+  position: relative;
+}
+.popup01 .popup-input01 p {
+  color: #fff;
+}
+
+.popup01 .popup-input01 a {
+  color: #fff;
+}
+.popup01 input {
+  width: 70%;
+  height: 4vh;
+  border: 1px solid;
+  border-radius: 2px;
+}
+.popup01 .popup-input01 button {
+  width: 73%;
+  background-color: #ff7f00;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 2px;
+  height: 30px;
+}
+h1.heading01 {
+  color: #f79604;
+  font-size: 15px;
+  font-family: Major Mono Display;
+}
+
+@media only screen and (max-width: 450px) {
+  .popup01 .popup-inner01 {
+    left: 18vw;
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .popup01 .popup-inner01 {
+    left: 29vw;
+    width: 43%;
+  }
+}
+
+/**************
+             order page 
+                   ***************************/
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+nav.bar {
+  background-color: #495050;
+  width: 121%;
+  height: 50px;
+  display: flex;
+}
+nav.bar .signup a {
+  margin-left: -1px;
+}
+
+.container {
+  display: flex;
+}
+
+.main .header {
+  top: 10px;
+  width: 100%;
+  display: flex;
+  margin: 0%;
+}
+.main .shipment h2 {
+  color: #fff;
+  font-weight: normal;
+}
+.main .shipment p {
+  color: #fff;
+  font-family: Roboto;
+}
+.main .checkin {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.main ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.header .logo1 {
+  margin: auto 0.5% auto 3%;
+  color: #ff7f00;
+  font-size: 23px;
+  font-family: Major Mono Display;
+}
+.header .logo2 {
+  margin: auto 0;
+  color: #707070;
+  font-size: 23px;
+}
+.main .header li {
+  color: #fff;
+  width: 50%;
+}
+.main li img {
+  width: 30%;
+}
+.top {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: #ff7f00;
+}
+.top p {
+  color: #fff;
+  position: absolute;
+  left: 37%;
+  top: 16%;
+  font-size: 30px;
+}
+.details {
+  width: 100%;
+  height: 100%;
+}
+.details form {
+  margin: auto 21%;
+  padding-top: 4%;
+  color: #fff;
+  font-family: Roboto;
+}
+.details form input {
+  width: 100%;
+  padding: 1% 0 1% 1%;
+  background-color: #eaeaea;
+  border-style: none;
+  margin-bottom: 2%;
+}
+
+.details form button {
+  color: #ffffff;
+  border-style: none;
+  padding: 1% 4%;
+  font-size: 15px;
+  background-color: #ff7f00;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+.main .shipment-details {
+  color: #fff;
+  font-family: Roboto;
+}
+.shipment {
+  margin: auto 21%;
+  padding-top: 3%;
+}
+.shipment table td {
+  padding: 3% 0% 0% 0%;
+  color: #ff7f00;
+  font-size: 18px;
+}
+tr .total td {
+  border: 1px solid #f76028;
+}
+.shipment .widder-td {
+  width: 76%;
+}
+.shipment h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.shipment table {
+  width: 100%;
+}
+.shipment p {
+  color: #e4e4e4;
+  font-family: Roboto;
+}
+.shipment .widder-td2 {
+  width: 15%;
+}
+
+.shipment table .total td {
+  font-family: Roboto;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 1px solid #ff7f00;
+  padding-top: 2%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top {
+    margin-top: 1px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .top {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  nav.bar .signup a {
+    margin-left: -31px;
+  }
+  .top {
+    top: -1px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main .top {
+    width: 121%;
+    top: 17px;
+  }
+  .main li img {
+    width: 36%;
+    margin-left: 70px;
+  }
+  .top p {
+    left: 20%;
+  }
+}
+
+/**************************************
+Thank you page
+**************************************/
+.main01 {
+  width: 100%;
+  position: relative;
+}
+.main01 .shipment h2 {
+  color: #fff;
+  font-weight: normal;
+}
+.main01 .shipment p {
+  color: #fff;
+}
+.main01 .shipment-details {
+  color: #fff;
+  font-family: Roboto;
+}
+.main01 .top {
+  margin-top: 0;
+}
+.main01 .shipment p {
+  margin-left: 4%;
+  font-family: Roboto;
+  font-size: 27px;
+}
+.main01 .top p {
+  color: #fff;
+  position: absolute;
+  left: 33%;
+  top: 16%;
+  font-size: 30px;
+  font-family: Roboto;
+}
+
+.main01 .details form button {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #ff7f00;
+  border-radius: 5px;
+  margin: auto 37%;
+  font-family: Roboto;
+}
+.main01 .details button a {
+  color: #fff;
+  text-decoration: none;
+}
+@media only Screen and (max-width: 800px) {
+  .main01 .top p {
+    left: 26%;
+  }
+  .main01 .shipment p {
+    margin-left: 11%;
+  }
+  .main01 .top {
+    top: 0px;
+  }
+}
+@media only Screen and (max-width: 450px) {
+  .main01 .top p {
+    left: 12%;
+    top: 25%;
+    font-size: 19px;
+  }
+  .main01 .shipment p {
+    margin-left: 0%;
+    font-size: 9px;
+  }
+  .main01 .details form button {
+    margin: auto 24%;
+  }
+}

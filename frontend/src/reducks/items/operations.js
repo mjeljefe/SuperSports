@@ -3,15 +3,15 @@ import { fetchItemsAction } from "./actions";
 
 const api = new API();
 
-ecport const fetchItems = () => {
-    return async (dispatch) => {
-        retrun api
-            .getItems()
-            .then((items) => {
-                dispatch(fetchItemsActions(items));
-            })
-            .catch((error) => {
-                alert("Failed to connect API: /items/");
-            });
-    };
+export const fetchItems = () => {
+  return async (dispatch) => {
+    return api
+      .getItems()
+      .then((items) => {
+        dispatch(fetchItemsAction(items));
+      })
+      .catch((error) => {
+        alert("Failed to connect API: /items/");
+      });
+  };
 };

@@ -1,10 +1,10 @@
 import { createSelector } from "reselect";
 
-const cartSelecetor = (state) => state.carts;
+const cartsSelector = (state) => state.carts;
 
 export const getCarts = createSelector([cartsSelector], (state) => state.list);
 
-export const getSUbtotal = createSelector(
-    [cartsSelector],
-    (state) => state.subtotal
+export const getSubtotal = createSelector(
+  [cartsSelector],
+  (state) => state.subtotal
 );
