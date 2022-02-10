@@ -1,10 +1,10 @@
-from re import T
 from django.db import models
 from apps.items.models import Item
-from apps.users.models. import User
+from apps.users.models import User
 from config.constants import *
 
-class Order(models.MOdel):
+
+class Order(models.Model):
     class Meta(object):
         db_table = 'order'
 
@@ -29,11 +29,11 @@ class Order(models.MOdel):
     state = models.CharField(
         'State', blank=False, null=False, max_length=25, db_index=True
     )
-    country = models.CharField(
-        'Country', blank=False, null=False, max_length=25, db_index=True
-    )
     postal_code = models.IntegerField(
         'Postal Code', blank=False, null=False, db_index=True
+    )
+    country = models.CharField(
+        'Country', blank=False, null=False, max_length=25, db_index=True, default='United State'
     )
     telephone = models.IntegerField(
         'Telephone', blank=True, null=True, db_index=True
@@ -45,24 +45,27 @@ class Order(models.MOdel):
         'Updated At', blank=True, auto_now=True
     )
 
+    
 
+class OrderItem(models.Model):
+    class Meta(object):
+        db_table = 'order_item'
 
-    class OrderItem(models.Model):
-        class Meta(object):
-                db_table = 'order item'
+    order = models.ForeignKey(
+        Order, on_delete=models.CASCADE, db_index=True
+    )
+    item = models.ForeignKey(
+        Item, on_delete=models.CASCADE, db_index=True
+    )
+    quantity = models. IntegerField(
+        'Quantity', blank=False, null=False, db_index=True
+    )
+    created_at = models.DateTimeField(
+        'Created At', blank=True, auto_now_add=True
+    )
+    updated_at = models.DateTimeField(
+        'Updated At', blank=True, auto_now=True
+    )
 
-        order = models.ForeignKey(
-            Order, on_delete=models.CASCADE, db_index=True
-        )
-        item = models.ForeignKey(
-            Item, on_delete=models.CASCADE, db_index=True
-        )
-        quantity = models.IntegerField(
-            'Quantity', blank=False, null=False, db_index=True
-        )
-        created_at = models.DateTimeField(
-            'Created At', blank=True, auto_now_add=True
-        )
-        updated_at = models.DateTimeField(
-            'Updated At', blank=True, auto_now=True
-        )
+    
+

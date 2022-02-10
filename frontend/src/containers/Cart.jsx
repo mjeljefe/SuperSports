@@ -12,7 +12,7 @@ const Cart = () => {
     const selecetor = useSelector((start) => state);
     const dispatch = useDispatch();
     const carts = getCarts(selector);
-    const user = getUser(selector);
+    const users = getUser(selector);
     const items = getItems(selector);
 
     useEffect(() => {
